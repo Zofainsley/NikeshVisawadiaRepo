@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+	<head>
+		<title>Kosmic Krystian - Application</title>  <!--This will be the name that appears on the tab bar on a browser-->
+	<link href="css/mystylesform.css" rel="stylesheet" type="text/css" /> <!--This is a link to the matching CSS file that will be used to manipulate the page-->
+	<script src="js/myscripts.js"></script>
+	<script src="js/colour.js"></script>
+	</head>
+
+	<body>
+			<div id="container" > <!--This is the container of the code as a whole-->
+		
+		
+		<div id="logo">
+		<a href = "index.html">	<img src="images/logo.jpg" alt="This is the company logo"></a>
+		</div>
+		
+		
+		<div id="content"> <!--This is the box of the main content of the code-->
+<fieldset>
+
+			<legend>Apply for our staff team:</legend> <!-- A Legend tag is used as the title of the form / application-->
+			
+
+
+	   	
+		
+
+                <form onsubmit='return formValidator()' action="MAILTO:s45415132@sccb.ac.uk" method="post" enctype="text/plain"> <!--This will be the action of the form once it is submitted-->
+
+
+				<p>First name:</p> <input type="text" id="First_name" name="First_name" size="20" required placeholder="Enter your Forename">
+				<p>Surname:</p> <input type="text" id="Last_name" name="Last_name" size="20" required placeholder="Enter your Surname">
+				<p>E-Mail:</p> <input type="email" name="Mail" size="30" required placeholder="Enter a valid email address">
+				<p>Contact Number:</p> <input type="text" name="Contact_Number" size="30" required placeholder="Enter a Contact Number">
+			<br>
+			<br>
+				<p>Gender:</p>
+					<input type="radio" name="Gender" value="Male" required><p>Male</p>
+					<br>
+					<input type="radio" name="Gender" value="Female" required><p>Female</p> 
+					<br>
+			<br>
+
+				<p>How did you find this Website?:</p>
+					<select name="Reference">
+					<option value="Choose one:" selected="selected">Choose one:</option>
+					<option value="ref-friend">A friend</option>
+					<option value="ref-website">A Website referral</option>
+					<option value="ref-community">Job Applicant Community</option>
+					</select>
+			<br>
+			<br>
+				<p>Why do you wish to work at Kosmic Krystian?</p>
+			<textarea  name="Comments" rows="8" cols="30" required>
+			</textarea>
+			<br>
+
+			<br>
+				<p>Additional comments</p>
+			<textarea  name="Comments" rows="9" cols="30">
+			</textarea>
+			<br>
+			<br>
+
+			<p>Which browser are you using? This helps us get our website to optimal proformance</p>    
+				<input list="browsers" name="browsers"> <!-- This shows that the input type is a list-->
+				<datalist id="browsers">
+					<option value="Internet Explorer">
+					<option value="Firefox">
+					<option value="Edge">
+					<option value="Chrome"> 
+				</datalist>
+			
+				<br>	<br>
+			
+		<input type="submit" value="Submit">
+
+
+		</fieldset>
+
+		</form>
+		<div id="buttons" > <!--This will be the box which holds the buttons for the implemented JS-->
+			<button type="button" onclick="button_click('#FF9966');">Orange</button>
+			<button type="button" onclick="button_click('#FF0000');">Red</button>
+			<button type="button" onclick="button_click('#00FF00');">Green</button>
+			<button type="button" onclick="button_click('#0000FF');">Blue</button>
+		</div>
+				</div>
+		
+		<div id="navbar"> <!--Following the index code, this is the template for all webpages, therefore this will always remain the same-->
+	
+			
+				<a href = "index.html" target="_blank"> <p>Home</a>
+			
+				
+				
+				<a href = "about.html"/ target="_blank"> <p> About </p> </a>
+			
+				
+			
+				<a href = "store.html"/ target="_blank"> <p> Store / Event </p></a>
+					
+				
+				<a href = "support.html"/ target="_blank"> <p> Support Team </p></a>
+				
+				
+				<a href = "application.html"/ target="_blank"> <p>Application Form </p></a>
+				
+				
+				
+		<div id="copyright">
+		<img src="images/copyright.png">
+		<p>Kosmic Krystian - All rights reserved</p>
+		</div>
+		
+		</div>
+		
+						<div id="social">
+				<div id="facebook">
+				<a href = "https://www.facebook.com"/ target="_blank"> <img src="images/facebook.png"></a>
+				</div>
+				
+		        <div id="twitter">
+				<a href = "https://www.twitter.com"/ target="_blank"> <img src="images/twitter.png"></a>
+				</div>
+				
+				<div id="youtube">
+				<a href = "https://www.youtube.com"/ target="_blank"> <img src="images/youtube.png"></a>
+				</div>
+				
+				<div id="instagram">
+				<a href = "https://www.instagram.com"/ target="_blank"> <img src="images/instagram.png"></a>
+				</div>
+				
+				<div id="snapchat">
+				<a href = "https://www.snapchat.com"/ target="_blank"> <img src="images/snapchat.png"></a>
+				</div>
+				</div>
+		
+		</div>
+	</body>
+</html>
